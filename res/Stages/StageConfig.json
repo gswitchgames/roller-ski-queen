@@ -1,0 +1,63 @@
+[
+    {
+        "name": "关卡摆放信息",
+        "roadType": [
+            "Road_N1   长度(range)50    ，直道",
+            "Road_U     长度50    ，上升30",
+            "Road_D     长度50    ，下降30",
+            "Road_R      长度 2*PI*50/4 = 25PI   ≈   78.53981633974483   ，右转90",
+            "Road_L      长度 2*PI*50/4 = 25PI   ≈   78.53981633974483   ，左转90",
+            "Road_F      长度50   ，直道，  31.5后面是跳台，前方保证有三条50的直道（即总长度100）跑道最佳"
+        ],
+        "item": [
+            "type",
+            "range（前方距离）",
+            "horizontal（左右距离）",
+            "count(默认1)",
+            "range间距（默认1）",
+            "horzontal间距（默认0）"
+        ],
+        "item_type": [
+            "Block_1    碰到退后",
+            "Block_2    碰到退后",
+            "Block_3    碰到退后",
+            "Coin",
+            "Magnet",
+            "Sword",
+            "Ponding    水池建议摆放位置，直道，range25处，horizontal -3到3",
+            "Jump_1     跳板建议摆放位置，直道，range25处，horizontal保证在中间平地（不建议摆放在Road_F，会导致空中两段跳）"
+        ],
+        "关卡横向摆放大概信息": "-11 ~ -6  左边圆形    左边道-3     中间道0  右边道3   右边圆形6~11"
+    },
+    {
+        "name": "Prefab",
+        "stage": [
+            {
+                "roadType": "Road_N1",
+                "item": [
+                    [
+                        "Coin",
+                        5,
+                        0,
+                        9,
+                        5
+                    ]
+                ]
+            }
+        ]
+    },
+    {
+        "stage": [
+            "Prefab_Block_1_Sword",
+            "Prefab_Circle",
+            "Prefab_DNUU",
+            "Prefab_DRLU",
+            "Prefab_LR_Jump",
+            "Prefab_NBP",
+            "Prefab_Road_F",
+            "Prefab_RoadF_UD",
+            "Prefab_UD",
+            "Prefab_ULRD"
+        ]
+    }
+]
